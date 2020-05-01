@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../components/Login.vue'
 import Welcome from '../components/Welcome'
+import Users from '../components/user/Users.vue'
 // 导入全局样式表
 import '../assets/css/global.css'
 import Home from '../components/Home'
@@ -17,7 +18,8 @@ const router = new VueRouter({
       component: Home,
       redirect: '/welcome',
       children: [
-        { path: '/welcome', component: Welcome }
+        { path: '/welcome', component: Welcome },
+        { path: '/users', component: Users }
       ]
     }
   ]
